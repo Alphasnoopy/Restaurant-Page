@@ -1,0 +1,363 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+menu,
+ol,
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+html {
+    width: 100%;
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    background-color: rgb(253, 253, 120);
+    overflow-y: scroll;
+}
+
+body {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+label,
+button,
+[type=submit] {
+    cursor: pointer;
+}
+
+/*  ------------------------------------------------------------> Header Section */
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 81, 81);
+    margin-bottom: 2rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.brand,
+.header-section>nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.brand>p {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.brand>img {
+    height: 10rem;
+    width: auto;
+}
+
+.nav-btn {
+    border: none;
+    background-color: inherit;
+    font-size: 2rem;
+}
+
+.nav-btn:hover {
+    color: white;
+}
+
+/*  ------------------------------------------------------------> Home Section */
+
+.home {
+    border-bottom: 2rem solid white;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgb(32, 177, 235);
+    padding: 5rem 10rem;
+}
+
+.hero-header-section>h1,
+.headline-section>h2{
+    font-size: 1.8rem;
+}
+
+.hero-header-section>p {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: white;
+}
+
+.headline-section>p {
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+}
+
+.headline-section>p::first-letter {
+    initial-letter: 2;
+}
+
+.hero-section>img {
+    height: 28rem;
+    width: auto;
+}
+
+.reviews-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-section>h2 {
+    background-color: rgb(255, 225, 171);
+    padding: 0.5rem;
+}
+
+.reviews-section>h2,
+.hours-section>h2,
+.location-section>h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.reviews-section>div {
+    display: flex;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    background-color: rgb(255, 225, 171);
+    padding: 2rem;
+}   
+
+.review>cite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+    max-width: 1.8em;
+    height: auto;
+}
+
+.restaurant-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.hours-section,
+.location-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.hours-section {
+    background-color: rgb(204, 204, 255);
+    
+}
+
+.hours-section>h2,
+.location-section>h2 {
+    border: 0.5rem solid white;
+    padding: 0.5rem;
+}
+
+.location-section {
+    background-color: rgb(144, 238, 144);
+}
+
+.location-section>div,
+.location-section p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-section p {
+    margin-bottom: 0;
+}
+
+/*  ------------------------------------------------------------> Menu Section */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 204, 255);
+    margin: 0 2rem;
+    border-bottom: 2rem solid white;
+}
+
+.menu>h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-section>h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: 0.3em white underline;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.item-header>h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.item-price {
+    font-size: 1.8rem;
+}
+
+.item-description {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+/*  ------------------------------------------------------------> Contact Section */
+
+.contact,
+.contact>section,
+.contact-form,
+.contact-info>div,
+.contact-form>div+div,
+#submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    border-bottom: 2rem solid white;
+    background-color: rgb(144, 238, 144);
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+
+}
+.contact-hero {
+    background-color: rgb(144, 238, 144);
+}
+
+.contact-hero>h1 {
+    font-size: 4rem;
+    text-decoration: 0.3em white underline;
+    padding: 0.5rem;
+}
+
+.contact-hero>p {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 0 4rem;
+    line-height: 1.5em;
+}
+
+.contact-hero>p>span {
+    font-weight: 600;
+    text-decoration: 0.1em white wavy underline;
+}
+
+.form-section {
+    border: 0.5rem dashed white;
+    padding: 0 2rem 2rem 2rem;
+    margin: 2rem 0;
+}
+
+.form-section>h2 {
+    font-size: 2rem;
+}
+
+.contact-form {
+    gap: 2rem;
+    font-size: 1.8rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: inherit;
+}
+
+.contact-form input {
+    padding: 0.5rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-form textarea {
+    padding: 1rem;
+    line-height: 1.5em;
+}
+
+#submit {
+    border: 0.2rem solid black;
+    background-color: inherit;
+}
+
+#submit:hover {
+    border-color: white;
+    color: white;
+}
+
+/*  ------------------------------------------------------------> Footer Section */
+
+footer {
+    display: flex;
+    gap : 2rem;
+    background-color: rgb(253, 253, 120);
+    justify-content: center;
+    font-size: 1.5rem;
+}
